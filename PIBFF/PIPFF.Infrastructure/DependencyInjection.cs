@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PIBFF.Application.Interfaces;
 using PIBFF.Infrastructure.ExternalServices;
+using PIBFF.Infrastructure.Messaging;
 using Polly;
 using Polly.Extensions.Http;
 
@@ -14,18 +15,19 @@ public static class DependencyInjection
     /// </summary>
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddSingleton<IMessagePublisher, RabbitMqMessagePublisher>();
         services.AddHttpClient<IPartnerVerificationService, PartnerVerificationClient>(client =>
-            {
-                var baseUrl = configuration["PartnerVerificationApi:BaseUrl"]
-                    ?? throw new InvalidOperationException(
-                        "Configuration 'PartnerVerificationApi:BaseUrl' is missing.");
+        {
+            var baseUrl = configuration["PartnerVerificationApi:BaseUrl"]
+                ?? throw new InvalidOperationException(
+                    "Configuration 'PartnerVerificationApi:BaseUrl' is missing.");
 
-                client.BaseAddress = new Uri(baseUrl);
+            client.BaseAddress = new Uri(baseUrl);
 
-                // Per-attempt timeout: bounds a single HTTP call so a hung request
-                // doesn't block the pipeline — the retry policy below reacts to it.
-                client.Timeout = TimeSpan.FromSeconds(3);
-            })
+            // Per-attempt timeout: bounds a single HTTP call so a hung request
+            // doesn't block the pipeline — the retry policy below reacts to it.
+            client.Timeout = TimeSpan.FromSeconds(3);
+        })
             .AddPolicyHandler(GetRetryPolicy())
             .AddPolicyHandler(GetCircuitBreakerPolicy());
 
@@ -34,7 +36,7 @@ public static class DependencyInjection
 
     /// <summary>
     /// Retries transient failures (5xx, 408, and network/timeout exceptions) up to
-    /// 3 times with exponential backoff + jitter. Given the mock API's 30% failure rate
+    /// 3 times with exponential backoff + jitter. Given the mock API's 30% failure
     /// </summary>
     private static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
     {
