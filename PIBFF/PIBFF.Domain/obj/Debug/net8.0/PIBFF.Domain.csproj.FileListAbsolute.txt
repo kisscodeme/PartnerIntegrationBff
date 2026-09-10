@@ -1,14 +1,3 @@
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.deps.json
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.pdb
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.AssemblyInfoInputs.cache
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.AssemblyInfo.cs
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.csproj.CoreCompileInputs.cache
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\refint\PIBFF.Domain.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.pdb
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Domain\obj\Debug\net8.0\ref\PIBFF.Domain.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.deps.json
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\bin\Debug\net8.0\PIBFF.Domain.pdb
@@ -16,6 +5,7 @@ D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.Genera
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.AssemblyInfoInputs.cache
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.AssemblyInfo.cs
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.csproj.CoreCompileInputs.cache
+D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.sourcelink.json
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\refint\PIBFF.Domain.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Domain\obj\Debug\net8.0\PIBFF.Domain.pdb

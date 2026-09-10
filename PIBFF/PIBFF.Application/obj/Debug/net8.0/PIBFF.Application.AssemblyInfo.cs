@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PIBFF.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7093be2ef5050f1920f0428fdb1a56c872fd1f3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PIBFF.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PIBFF.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

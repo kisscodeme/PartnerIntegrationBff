@@ -12,6 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIBFF.Application", "PIBFF\
 		{816C125E-79ED-43F6-A071-C70935152ED9} = {816C125E-79ED-43F6-A071-C70935152ED9}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIBFF.Api", "PIBFF\PIBFF.Api\PIBFF.Api.csproj", "{A6F6C681-BA3D-4028-AEA7-214320DCB87C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E306125-9AA9-44E9-ADB7-D51CE5EB216A} = {3E306125-9AA9-44E9-ADB7-D51CE5EB216A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +31,10 @@ Global
 		{3E306125-9AA9-44E9-ADB7-D51CE5EB216A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E306125-9AA9-44E9-ADB7-D51CE5EB216A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E306125-9AA9-44E9-ADB7-D51CE5EB216A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F6C681-BA3D-4028-AEA7-214320DCB87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F6C681-BA3D-4028-AEA7-214320DCB87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F6C681-BA3D-4028-AEA7-214320DCB87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F6C681-BA3D-4028-AEA7-214320DCB87C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{816C125E-79ED-43F6-A071-C70935152ED9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{3E306125-9AA9-44E9-ADB7-D51CE5EB216A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A6F6C681-BA3D-4028-AEA7-214320DCB87C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48E46BFD-4C4E-4216-9E43-A75742DA928D}

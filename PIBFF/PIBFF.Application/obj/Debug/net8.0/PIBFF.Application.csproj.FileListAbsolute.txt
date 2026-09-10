@@ -1,18 +1,3 @@
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.csproj.AssemblyReference.cache
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.AssemblyInfoInputs.cache
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.AssemblyInfo.cs
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.csproj.CoreCompileInputs.cache
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.deps.json
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.pdb
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Domain.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Domain.pdb
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Ap.2480D021.Up2Date
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\refint\PIBFF.Application.dll
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.pdb
-D:\SSTECH\2\PartnerIntegrationBFF\PIBFF\PIBFF.Application\obj\Debug\net8.0\ref\PIBFF.Application.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.deps.json
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\bin\Debug\net8.0\PIBFF.Application.pdb
@@ -23,6 +8,7 @@ D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Applicat
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.AssemblyInfoInputs.cache
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.AssemblyInfo.cs
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.csproj.CoreCompileInputs.cache
+D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.sourcelink.json
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Ap.2480D021.Up2Date
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\PIBFF.Application.dll
 D:\PartnerIntegrationBff\PIBFF\PIBFF.Application\obj\Debug\net8.0\refint\PIBFF.Application.dll
