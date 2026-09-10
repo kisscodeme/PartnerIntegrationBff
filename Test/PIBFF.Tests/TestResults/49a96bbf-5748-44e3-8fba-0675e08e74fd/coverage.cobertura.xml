@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.9411" branch-rate="1" version="1.9" timestamp="1789014455" lines-covered="128" lines-valid="136" branches-covered="12" branches-valid="12">
+  <sources>
+    <source>D:\PartnerIntegrationBff\PIBFF\</source>
+  </sources>
+  <packages>
+    <package name="PIBFF.Application" line-rate="0.9349" branch-rate="1" complexity="41">
+      <classes>
+        <class name="PIBFF.Application.Validators.TransactionRequestValidator" filename="PIBFF.Application\Validators\TransactionRequestValidator.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="BeAReasonableTimestamp" signature="(System.Nullable`1&lt;System.DateTimeOffset&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="32" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="13" hits="35" branch="False" />
+                <line number="14" hits="35" branch="False" />
+                <line number="15" hits="35" branch="False" />
+                <line number="16" hits="35" branch="False" />
+                <line number="17" hits="35" branch="False" />
+                <line number="19" hits="35" branch="False" />
+                <line number="20" hits="35" branch="False" />
+                <line number="21" hits="35" branch="False" />
+                <line number="23" hits="35" branch="False" />
+                <line number="24" hits="35" branch="False" />
+                <line number="26" hits="35" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="371" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="35" branch="False" />
+                <line number="28" hits="35" branch="False" />
+                <line number="29" hits="42" branch="False" />
+                <line number="31" hits="35" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="518" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="35" branch="False" />
+                <line number="33" hits="35" branch="False" />
+                <line number="34" hits="35" branch="False" />
+                <line number="35" hits="35" branch="False" />
+                <line number="36" hits="35" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="43" hits="32" branch="False" />
+            <line number="13" hits="35" branch="False" />
+            <line number="14" hits="35" branch="False" />
+            <line number="15" hits="35" branch="False" />
+            <line number="16" hits="35" branch="False" />
+            <line number="17" hits="35" branch="False" />
+            <line number="19" hits="35" branch="False" />
+            <line number="20" hits="35" branch="False" />
+            <line number="21" hits="35" branch="False" />
+            <line number="23" hits="35" branch="False" />
+            <line number="24" hits="35" branch="False" />
+            <line number="26" hits="35" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="371" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="27" hits="35" branch="False" />
+            <line number="28" hits="35" branch="False" />
+            <line number="29" hits="42" branch="False" />
+            <line number="31" hits="35" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="518" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="32" hits="35" branch="False" />
+            <line number="33" hits="35" branch="False" />
+            <line number="34" hits="35" branch="False" />
+            <line number="35" hits="35" branch="False" />
+            <line number="36" hits="35" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.Services.TransactionProcessingService" filename="PIBFF.Application\Services\TransactionProcessingService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(FluentValidation.IValidator`1&lt;PIBFF.Application.DTOs.TransactionRequest&gt;,PIBFF.Application.Interfaces.IPartnerVerificationService,PIBFF.Application.Interfaces.IMessagePublisher,Microsoft.Extensions.Logging.ILogger`1&lt;PIBFF.Application.Services.TransactionProcessingService&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="8" branch="False" />
+                <line number="22" hits="8" branch="False" />
+                <line number="23" hits="8" branch="False" />
+                <line number="24" hits="8" branch="False" />
+                <line number="25" hits="8" branch="False" />
+                <line number="26" hits="8" branch="False" />
+                <line number="27" hits="8" branch="False" />
+                <line number="28" hits="8" branch="False" />
+                <line number="29" hits="8" branch="False" />
+                <line number="30" hits="8" branch="False" />
+                <line number="31" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="8" branch="False" />
+            <line number="22" hits="8" branch="False" />
+            <line number="23" hits="8" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="25" hits="8" branch="False" />
+            <line number="26" hits="8" branch="False" />
+            <line number="27" hits="8" branch="False" />
+            <line number="28" hits="8" branch="False" />
+            <line number="29" hits="8" branch="False" />
+            <line number="30" hits="8" branch="False" />
+            <line number="31" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.Services.TransactionProcessingService/&lt;&gt;c" filename="PIBFF.Application\Services\TransactionProcessingService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;ProcessAsync&gt;b__5_0" signature="(FluentValidation.Results.ValidationFailure)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.Services.TransactionProcessingService/&lt;ProcessAsync&gt;d__5" filename="PIBFF.Application\Services\TransactionProcessingService.cs" line-rate="0.9464" branch-rate="1" complexity="6">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9464" branch-rate="1" complexity="6">
+              <lines>
+                <line number="36" hits="8" branch="False" />
+                <line number="37" hits="8" branch="False" />
+                <line number="38" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="200" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="39" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="2" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="48" hits="6" branch="False" />
+                <line number="49" hits="6" branch="False" />
+                <line number="50" hits="6" branch="False" />
+                <line number="51" hits="6" branch="False" />
+                <line number="52" hits="6" branch="False" />
+                <line number="53" hits="6" branch="False" />
+                <line number="54" hits="6" branch="False" />
+                <line number="55" hits="6" branch="False" />
+                <line number="60" hits="6" branch="False" />
+                <line number="61" hits="6" branch="False" />
+                <line number="63" hits="6" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="654" type="jump" coverage="100%" />
+                    <condition number="661" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="78" hits="2" branch="False" />
+                <line number="79" hits="2" branch="False" />
+                <line number="80" hits="2" branch="False" />
+                <line number="82" hits="2" branch="False" />
+                <line number="83" hits="2" branch="False" />
+                <line number="90" hits="3" branch="False" />
+                <line number="91" hits="3" branch="False" />
+                <line number="92" hits="2" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
+                <line number="95" hits="0" branch="False" />
+                <line number="97" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
+                <line number="99" hits="1" branch="False" />
+                <line number="100" hits="1" branch="False" />
+                <line number="101" hits="1" branch="False" />
+                <line number="102" hits="1" branch="False" />
+                <line number="104" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="109" hits="2" branch="False" />
+                <line number="110" hits="2" branch="False" />
+                <line number="111" hits="2" branch="False" />
+                <line number="113" hits="2" branch="False" />
+                <line number="114" hits="2" branch="False" />
+                <line number="115" hits="2" branch="False" />
+                <line number="116" hits="2" branch="False" />
+                <line number="117" hits="2" branch="False" />
+                <line number="118" hits="2" branch="False" />
+                <line number="119" hits="2" branch="False" />
+                <line number="121" hits="2" branch="False" />
+                <line number="122" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="8" branch="False" />
+            <line number="37" hits="8" branch="False" />
+            <line number="38" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="200" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="39" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="2" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="48" hits="6" branch="False" />
+            <line number="49" hits="6" branch="False" />
+            <line number="50" hits="6" branch="False" />
+            <line number="51" hits="6" branch="False" />
+            <line number="52" hits="6" branch="False" />
+            <line number="53" hits="6" branch="False" />
+            <line number="54" hits="6" branch="False" />
+            <line number="55" hits="6" branch="False" />
+            <line number="60" hits="6" branch="False" />
+            <line number="61" hits="6" branch="False" />
+            <line number="63" hits="6" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="654" type="jump" coverage="100%" />
+                <condition number="661" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="78" hits="2" branch="False" />
+            <line number="79" hits="2" branch="False" />
+            <line number="80" hits="2" branch="False" />
+            <line number="82" hits="2" branch="False" />
+            <line number="83" hits="2" branch="False" />
+            <line number="90" hits="3" branch="False" />
+            <line number="91" hits="3" branch="False" />
+            <line number="92" hits="2" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
+            <line number="95" hits="0" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="99" hits="1" branch="False" />
+            <line number="100" hits="1" branch="False" />
+            <line number="101" hits="1" branch="False" />
+            <line number="102" hits="1" branch="False" />
+            <line number="104" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="109" hits="2" branch="False" />
+            <line number="110" hits="2" branch="False" />
+            <line number="111" hits="2" branch="False" />
+            <line number="113" hits="2" branch="False" />
+            <line number="114" hits="2" branch="False" />
+            <line number="115" hits="2" branch="False" />
+            <line number="116" hits="2" branch="False" />
+            <line number="117" hits="2" branch="False" />
+            <line number="118" hits="2" branch="False" />
+            <line number="119" hits="2" branch="False" />
+            <line number="121" hits="2" branch="False" />
+            <line number="122" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.Interfaces.PartnerVerificationOutcome" filename="PIBFF.Application\Interfaces\IPartnerVerificationService.cs" line-rate="0.8332999999999999" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="17" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Reason" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="Verified" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="Rejected" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Unavailable" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(PIBFF.Application.Interfaces.PartnerVerificationOutcome)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="37" hits="17" branch="False" />
+            <line number="39" hits="9" branch="False" />
+            <line number="42" hits="8" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="35" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.DTOs.PartnerVerificationApiResponse" filename="PIBFF.Application\DTOs\PartnerVerificationApiResponse.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_PartnerId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_IsValid" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_VerifiedAtUtc" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.DTOs.TransactionRequest" filename="PIBFF.Application\DTOs\TransactionRequest.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_PartnerId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="79" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TransactionReference" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="79" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Amount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="83" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Currency" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="91" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Timestamp" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="112" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(PIBFF.Application.DTOs.TransactionRequest)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="27" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="79" branch="False" />
+            <line number="10" hits="79" branch="False" />
+            <line number="11" hits="83" branch="False" />
+            <line number="12" hits="91" branch="False" />
+            <line number="13" hits="112" branch="False" />
+            <line number="7" hits="27" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.DTOs.TransactionResponse" filename="PIBFF.Application\DTOs\TransactionResponse.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_CorrelationId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PartnerId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TransactionReference" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AcceptedAtUtc" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="3" branch="False" />
+            <line number="9" hits="3" branch="False" />
+            <line number="10" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Application.Common.ProcessingResult`1" filename="PIBFF.Application\Common\ProcessingResult.cs" line-rate="0.9285" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_IsSuccess" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FailureReason" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Errors" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="Success" signature="(TValue)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Failure" signature="(PIBFF.Application.Common.ProcessingFailureReason,System.String[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="Failure" signature="(PIBFF.Application.Common.ProcessingFailureReason,System.Collections.Generic.IReadOnlyCollection`1&lt;System.String&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Boolean,TValue,PIBFF.Application.Common.ProcessingFailureReason,System.Collections.Generic.IReadOnlyCollection`1&lt;System.String&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="8" branch="False" />
+                <line number="22" hits="8" branch="False" />
+                <line number="23" hits="8" branch="False" />
+                <line number="24" hits="8" branch="False" />
+                <line number="25" hits="8" branch="False" />
+                <line number="26" hits="8" branch="False" />
+                <line number="27" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="8" branch="False" />
+            <line number="18" hits="5" branch="False" />
+            <line number="19" hits="4" branch="False" />
+            <line number="20" hits="5" branch="False" />
+            <line number="30" hits="2" branch="False" />
+            <line number="32" hits="6" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="21" hits="8" branch="False" />
+            <line number="22" hits="8" branch="False" />
+            <line number="23" hits="8" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="25" hits="8" branch="False" />
+            <line number="26" hits="8" branch="False" />
+            <line number="27" hits="8" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="PIBFF.Domain" line-rate="1" branch-rate="1" complexity="9">
+      <classes>
+        <class name="PIBFF.Domain.Entities.PartnerTransaction" filename="PIBFF.Domain\Entities\PartnerTransaction.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_PartnerId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="25" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TransactionReference" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="21" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Amount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Currency" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Timestamp" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CorrelationId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="25" branch="False" />
+            <line number="10" hits="21" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="13" branch="False" />
+            <line number="13" hits="6" branch="False" />
+            <line number="19" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="PIBFF.Domain.Constants.SupportedCurrencies" filename="PIBFF.Domain\Constants\SupportedCurrencies.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="IsSupported" signature="(System.String)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="16" hits="35" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="35" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="6" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

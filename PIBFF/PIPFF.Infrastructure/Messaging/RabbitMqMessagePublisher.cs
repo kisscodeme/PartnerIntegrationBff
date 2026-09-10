@@ -1,5 +1,5 @@
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using PIBFF.Application.Interfaces;
 using PIBFF.Domain.Entities;
 using RabbitMQ.Client;
@@ -12,7 +12,8 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
 {
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
 
-    private readonly IConfiguration _configuration;
+    //private readonly IConfiguration _configuration;
+    private readonly RabbitMqOptions _options;
     private readonly ILogger<RabbitMqMessagePublisher> _logger;
     private readonly SemaphoreSlim _publishLock = new(1, 1);
 
@@ -20,10 +21,10 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
     private IChannel? _channel;
 
     public RabbitMqMessagePublisher(
-        IConfiguration configuration,
+        IOptions<RabbitMqOptions> options,
         ILogger<RabbitMqMessagePublisher> logger)
     {
-        _configuration = configuration;
+        _options = options.Value;
         _logger = logger;
     }
 
@@ -32,8 +33,8 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
         await _publishLock.WaitAsync(cancellationToken);
         try
         {
+            var queueName = _options.QueueName;
             await EnsureConnectedAsync(cancellationToken);
-            var queueName = GetSetting("RabbitMq:QueueName", "partner-transactions");
             var body = JsonSerializer.SerializeToUtf8Bytes(transaction, JsonOptions);
 
             var properties = new BasicProperties
@@ -83,12 +84,12 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
 
         var factory = new ConnectionFactory
         {
-            HostName = GetSetting("RabbitMq:HostName", "localhost"),
-            Port = GetIntSetting("RabbitMq:Port", 5672),
-            UserName = GetSetting("RabbitMq:UserName", "guest"),
-            Password = GetSetting("RabbitMq:Password", "guest"),
-            VirtualHost = GetSetting("RabbitMq:VirtualHost", "/"),
-            ClientProvidedName = "PartnerIntegrationBff"
+            HostName = _options.HostName,
+            Port = _options.Port,
+            UserName = _options.UserName,
+            Password = _options.Password,
+            VirtualHost = _options.VirtualHost,
+            ClientProvidedName = _options.ClientProvidedName
         };
 
         factory.AutomaticRecoveryEnabled = true;
@@ -105,7 +106,7 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
 
         _channel = await _connection.CreateChannelAsync(channelOptions, cancellationToken);
 
-        var queueName = GetSetting("RabbitMq:QueueName", "partner-transactions");
+        var queueName = _options.QueueName;
         await _channel.QueueDeclareAsync(
             queue: queueName,
             durable: true,
@@ -119,11 +120,11 @@ public sealed class RabbitMqMessagePublisher : IMessagePublisher, IAsyncDisposab
             factory.HostName, factory.Port, queueName);
     }
 
-    private string GetSetting(string key, string fallback) =>
-        _configuration[key] ?? fallback;
+    //private string GetSetting(string key, string fallback) =>
+    //    _configuration[key] ?? fallback;
 
-    private int GetIntSetting(string key, int fallback) =>
-        int.TryParse(_configuration[key], out var value) ? value : fallback;
+    //private int GetIntSetting(string key, int fallback) =>
+    //    int.TryParse(_configuration[key], out var value) ? value : fallback;
 
     public async ValueTask DisposeAsync()
     {

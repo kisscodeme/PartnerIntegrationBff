@@ -4,6 +4,7 @@ using PIBFF.Application.Interfaces;
 using PIBFF.Application.Services;
 using PIBFF.Application.Validators;
 using PIBFF.Infrastructure;
+using PIBFF.Infrastructure.Messaging;
 
 var builder = WebApplication.CreateBuilder(args);
 // MVC / Controllers
@@ -21,6 +22,9 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+builder.Services
+    .AddOptions<RabbitMqOptions>()
+    .Bind(builder.Configuration.GetSection("RabbitMq"));
 // FluentValidation - scans the Application assembly for all IValidator<T> implementations
 builder.Services.AddValidatorsFromAssemblyContaining<TransactionRequestValidator>();
 // Application services
