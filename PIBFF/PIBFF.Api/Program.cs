@@ -1,7 +1,9 @@
 using FluentValidation;
+using PIBFF.Api.Middleware;
 using PIBFF.Application.Interfaces;
 using PIBFF.Application.Services;
 using PIBFF.Application.Validators;
+using PIBFF.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 // MVC / Controllers
@@ -23,6 +25,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddValidatorsFromAssemblyContaining<TransactionRequestValidator>();
 // Application services
 builder.Services.AddScoped<ITransactionProcessingService, TransactionProcessingService>();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddHealthChecks();
 var app = builder.Build();
@@ -36,6 +39,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware<TimeoutExceptionMiddleware>();
 app.MapControllers();
 app.MapHealthChecks("/health");
 app.Run();

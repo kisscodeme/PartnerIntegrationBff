@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PIBFF.Application\PIBFF.Application.csproj" />
+    <ProjectReference Include="..\PIPFF.Infrastructure\PIPFF.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
